@@ -1,0 +1,18 @@
+paths:
+  do_split: false
+  train_path: "/home/xabierdetoro/xabi/tfm/gits/data/ravdness/train.csv"
+  val_path: "/home/xabierdetoro/xabi/tfm/gits/data/ravdness/val.csv"
+  manifest_path: "/home/xabierdetoro/xabi/tfm/gits/scripts/master_radvness.xlsx"
+  model_name: "ser_model_ravdness"
+  model_dir: "/home/xabierdetoro/xabi/tfm/gits/scripts/models_results"
+input:
+  sample_rate: 16000
+  duration: 3
+train:
+  aug_data: true
+  max_epochs: 1500
+  batch_size: 16
+  patience: 15
+  learning_rate: 0.001
+
+num_classes: 4
